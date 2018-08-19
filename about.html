@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="#" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="demo/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/glightbox.css">
+
+  <link rel="stylesheet" href="demo/codemirror/codemirror.css">
+  <link rel="stylesheet" href="fonts/iconfont.css">
+  <script src="demo/codemirror/codemirror.js"></script>
+
+  <title>About us</title>
+  <style>
+    .mcbutton {
+      padding: 18px 45px;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 2px;
+      margin-right: 10px;
+      color: #000;
+      border: 2px solid silver;
+      font-weight: 600;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.5em;
+    }
+
+    .mcbutton i {
+      color: inherit;
+      font-size: 2.0em;
+      margin-right: 10px;
+    }
+    .mcbutton:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    .mcbutton.light {
+      color: #eee;
+      border: 1px solid #eee;
+    }
+
+    .mcbutton.light:hover {
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header class="container">
+    <div id="fixed" class="fixed-nav">
+      <div class="wrap">
+        <a href="#" class="logo" style="font-family: 'Lobster', cursive;">tycho</a>
+        <ul>
+          <li><a href="./About-2/index.html#intro">INTRO</a></li>
+          <li><a href="./About-2/services.html#services">SERVICES</a></li>
+          <li><a href="./About-2/projects.html#project">PROJECT</a></li>
+          <li><a href="./About-2/contact.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro wrap">
+      <div class="lead">
+        <h1 style="font-family: 'Lobster', cursive;">tycho.</h1>
+        <p class="tagline">Direct by tycho</p>
+
+        <div class="download">
+          <a class="mcbutton" href="https://github.com/mcstudios/glightbox/releases/download/1.0/release.zip"><i class="iconfont icon-weixin" aria-hidden="true"></i>Offical</a>
+          <a class="mcbutton" href="About-2/index.html" target="_blank"><i class="iconfont icon-shouye" aria-hidden="true"></i>About us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="dist/js/glightbox.min.js"></script>
+  <script src="demo/js/site.js"></script>
+  <script>
+    var lightbox = GLightbox();
+    var lightboxDescription = GLightbox({
+      selector: 'glightbox2'
+    });
+    var lightboxVideo = GLightbox({
+      selector: 'glightbox3',
+      jwplayer: {
+        api: 'https://content.jwplatform.com/libraries/QzXs2BlW.js',
+        licenseKey: 'imB2/QF0crMqHks7/tAxcTRRjnqA9ZwxWQ2N1A=='
+      }
+    });
+    var lightboxInlineIframe = GLightbox({
+      'selector': 'glightbox4'
+    });
+  </script>
+</body>
+
+</html>
